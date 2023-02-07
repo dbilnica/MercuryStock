@@ -2,8 +2,10 @@ package com.example.mercurystock.di
 
 import com.example.mercurystock.data.csv.CSVParser
 import com.example.mercurystock.data.csv.CompanyListingsParser
+import com.example.mercurystock.data.csv.IntradayInfoParser
 import com.example.mercurystock.data.repository.StockRepositoryImpl
 import com.example.mercurystock.domain.model.CompanyListing
+import com.example.mercurystock.domain.model.IntradayInfo
 import com.example.mercurystock.domain.repository.StockRepository
 import dagger.Binds
 import dagger.Module
@@ -21,11 +23,11 @@ abstract class RepositoryModule {
         companyListingsParser: CompanyListingsParser
     ): CSVParser<CompanyListing>
 
-    /*@Binds
+    @Binds
     @Singleton
     abstract fun bindIntradayInfoParser(
         intradayInfoParser: IntradayInfoParser
-    ): CSVParser<IntradayInfo>*/
+    ): CSVParser<IntradayInfo>
 
     @Binds
     @Singleton

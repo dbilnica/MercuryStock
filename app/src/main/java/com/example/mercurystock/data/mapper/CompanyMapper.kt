@@ -1,6 +1,8 @@
 package com.example.mercurystock.data.mapper
 
 import com.example.mercurystock.data.local.CompanyListingEntity
+import com.example.mercurystock.data.remote.dto.CompanyInfoDto
+import com.example.mercurystock.domain.model.CompanyInfo
 import com.example.mercurystock.domain.model.CompanyListing
 
 fun CompanyListingEntity.toCompanyListing(): CompanyListing {
@@ -19,7 +21,7 @@ fun CompanyListing.toCompanyListingEntity(): CompanyListingEntity {
     )
 }
 
-/*
+
 fun CompanyInfoDto.toCompanyInfo(): CompanyInfo {
     return CompanyInfo(
         symbol = symbol ?: "",
@@ -28,4 +30,4 @@ fun CompanyInfoDto.toCompanyInfo(): CompanyInfo {
         country = country ?: "",
         industry = industry ?: ""
     )
-}*/
+}
