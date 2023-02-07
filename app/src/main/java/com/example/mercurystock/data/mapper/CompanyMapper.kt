@@ -11,10 +11,21 @@ fun CompanyListingEntity.toCompanyListing(): CompanyListing {
     )
 }
 
-fun CompanyListing.toCompanyListing(): CompanyListingEntity {
+fun CompanyListing.toCompanyListingEntity(): CompanyListingEntity {
     return CompanyListingEntity(
         name = name,
         symbol = symbol,
         exchange = exchange
     )
 }
+
+/*
+fun CompanyInfoDto.toCompanyInfo(): CompanyInfo {
+    return CompanyInfo(
+        symbol = symbol ?: "",
+        description = description ?: "",
+        name = name ?: "",
+        country = country ?: "",
+        industry = industry ?: ""
+    )
+}*/
