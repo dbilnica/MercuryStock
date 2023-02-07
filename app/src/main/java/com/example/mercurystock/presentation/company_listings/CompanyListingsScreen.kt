@@ -63,9 +63,9 @@ fun CompanyListingsScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                navigator.navigate(
+                                /*navigator.navigate(
                                     CompanyInfoScreenDestination(company.symbol)
-                                )
+                                )*/
                             }
                             .padding(16.dp)
                     )
